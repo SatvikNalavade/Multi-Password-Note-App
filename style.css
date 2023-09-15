@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    margin: 0;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.dark-theme .note-card {
+    background-color: #333;
+    color: #fff;
+    margin: 10px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+}
+
+#notes-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.note-card {
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+input[type="password"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #888; /* Changed button color to grey */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666; /* Darken the button color on hover */
+}
+
+/* Add padding to the note message box */
+#note-1, #note-2 {
+    padding: 10px;
+}
+
+/* Add styles for the custom alert */
+.custom-alert {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.custom-alert-content {
+    background-color: #f4f4f4;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 5px;
+    position: relative;
+    text-align: center; /* Center-align the alert content */
+}
+
+.alert-text {
+    color: #333; /* Change text color to black */
+}
+
+.close {
+    color: #888;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the close button */
+}
+
+.close:hover {
+    cursor: pointer;
+    color: #000;
+}
+
+/* Add styles for the dark theme */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    margin: 0;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.dark-theme .note-card {
+    background-color: #333;
+    color: #fff;
+    margin: 10px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+}
