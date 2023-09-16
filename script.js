@@ -1,3 +1,9 @@
+// Define passwords for each note
+const notePasswords = {
+    1: 'password1', // Password for Note 1
+    2: 'password2', // Password for Note 2
+};
+
 // Function to open a note by providing the correct password
 function openNote(noteId) {
     const passwordInput = document.getElementById(`password-${noteId}`);
@@ -6,7 +12,9 @@ function openNote(noteId) {
     
     if (passwordInput.value === password) {
         passwordInput.value = '';
+        passwordInput.style.display = 'none'; // Hide the password text box
         noteContainer.style.display = 'block';
+        document.getElementById(`open-button-${noteId}`).style.display = 'none'; // Hide the "Open Note" button
     } else {
         showAlert('Incorrect password. Please try again.');
     }
@@ -32,12 +40,6 @@ function closeAlert() {
     const alertBox = document.getElementById('custom-alert');
     alertBox.style.display = 'none';
 }
-
-// Define passwords for each note
-const notePasswords = {
-    1: 'password1', // Password for Note 1
-    2: 'password2', // Password for Note 2
-};
 
 // Check if there are saved notes and populate the text areas
 for (let i = 1; i <= 2; i++) {
